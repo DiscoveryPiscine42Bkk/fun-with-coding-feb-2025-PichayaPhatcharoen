@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $# -eq 0 ]; then
-    echo "No arguments passed."
+    echo "No arguments supplied"
 else
         echo "$1"
     if [ $# -gt 1 ]; then
