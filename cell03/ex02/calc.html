@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex02</title>
+</head>
+<style>
+    .outerbox{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .input, .input input{
+        display: flex;
+        flex-direction: column;
+        margin: 1%;
+        border-radius: 5px;
+    }
+
+    label {
+        text-align: center;
+    }
+    button,select{
+        text-align: center;
+        display: flex;
+        justify-self: center;
+        border-radius: 5px;
+    }
+
+</style>
+<body>
+    <div class="outerbox">
+        <div class="input">
+            <label for="num_a">left member</label>
+            <input type="text" id="num_a">          
+        </div>
+        <div class="input">
+            <label for="op">operator</label>
+            <select name="op" id="op">
+                <option value="1"> + </option>
+                <option value="2"> - </option>
+                <option value="3"> * </option>
+                <option value="4"> / </option>
+                <option value="5"> % </option>
+            </select>
+        </div>
+        <div class="input">
+            <label for="num_b">right member</label>
+            <input type="text" id="num_b">          
+        </div>
+    </div>
+    <button onclick="calculate()">Try me!</button>
+</body>
+<script>
+    function use_me(){
+        console.log("Please, use me..."); 
+        alert("Please, use me..."); 
+    }
+    setInterval(use_me, 30000);
+    
+    function calculate() {
+        var num_a = parseInt((document.getElementById("num_a").value));
+        var num_b = parseInt((document.getElementById("num_b").value));
+        var op = document.getElementById("op").value
+
+        if ((op === "4" || op === "5") && num_b === 0) {
+            console.log("It's over 9000!");
+            alert("It's over 9000!");
+        } else if (!Number.isInteger(num_a) || num_a <= 0 || !Number.isInteger(num_b) || num_b <= 0) {
+            console.log("Error");
+            alert("Error");
+        } else {
+        var result;
+        if (op === "1") {
+          result = num_a + num_b;
+        } else if (op === "2") {
+          result = num_a - num_b;
+        } else if (op === "3") {
+          result = num_a * num_b;
+        } else if (op === "4") {
+          result = num_a / num_b;
+        } else if (op === "5") {
+          result = num_a % num_b;
+        }
+        console.log(result);
+        alert(result);
+      }
+    }
+</script>
+
+</html>
