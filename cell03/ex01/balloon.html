@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex01</title>
+  <style>
+    #balloon {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 100%;
+    }
+    .center{
+        margin: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+  </style>
+</head>
+<body>
+    <div class="center"><div id="balloon" onmouseleave="decreaseSize()" onclick="pop()"></div></div>
+    
+  <script>
+    var count = 0;
+    var colors = ["red", "blue", "green"];
+
+    function updateBalloonSize(newSize) {
+      var balloon = document.getElementById("balloon");
+      balloon.style.width = newSize + "px";
+      balloon.style.height = newSize + "px";
+    }
+
+    function updateBalloonColor() {
+      var balloon = document.getElementById("balloon");
+      var index = Math.abs(count) % 3;
+      balloon.style.backgroundColor = colors[index];
+    }
+
+    function pop() {
+      count++;
+      var balloon = document.getElementById("balloon");
+      var size = parseFloat(window.getComputedStyle(balloon).width) + 10;
+      if (size > 420) {
+        size = 200;
+      }
+      updateBalloonSize(size);
+      updateBalloonColor();
+    }
+
+    function decreaseSize() {
+      count--;
+      var balloon = document.getElementById("balloon");
+      var size = parseFloat(window.getComputedStyle(balloon).width) - 5;
+      if (size < 200) {
+        size = 200;
+      }
+      updateBalloonSize(size);
+      updateBalloonColor();
+    }
+  </script>
+</body>
+</html>
