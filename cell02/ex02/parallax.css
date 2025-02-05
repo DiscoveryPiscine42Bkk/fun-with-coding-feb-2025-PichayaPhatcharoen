@@ -1,40 +1,35 @@
-html, body {
+body, html {
+    height: 100%;
     margin: 0;
 }
-.outer{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-h6{
-    width: 100vw;
-    text-align: center;
-    color: black;
-}
-.firstpic{
-    background-image: url("https://i.imgflip.com/15hh6x.jpg?a482928");
-    color: black;
-}
-.firstpic, .lastpic{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100vw;
+.parallax {
     height: 100vh;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
-}
-.blankbox{
+    background-size: cover;
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+.parallax-text {
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000; 
+}
+.parallax-1 {
+    background-image: url('https://i.imgflip.com/15hh6x.jpg?a482928');
+}
+.parallax-2 {
+    background-image: url('https://i.pinimg.com/1200x/49/c1/9c/49c19cf094a59f57b85feaae503497f0.jpg');
+}
+.content {
+    padding: 100px;
     text-align: center;
-    background-color: cadetblue;
-    width: 100vw;
-    height: 30vh;
+    background-color: black;
+    color: white;
 }
-.lastpic{
-    background-image: url("https://i.pinimg.com/1200x/49/c1/9c/49c19cf094a59f57b85feaae503497f0.jpg");
+.content-title {
+    font-size: 50px;
+    color: black(255, 255, 255);
 }
-
