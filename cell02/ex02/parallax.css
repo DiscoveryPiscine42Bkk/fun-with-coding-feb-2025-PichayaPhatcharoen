@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+h6{
+    width: 100vw;
+    text-align: center;
+    color: black;
+}
+.firstpic{
+    background-image: url("https://i.imgflip.com/15hh6x.jpg?a482928");
+    color: black;
+}
+.firstpic, .lastpic{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.blankbox{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: cadetblue;
+    width: 100vw;
+    height: 30vh;
+}
+.lastpic{
+    background-image: url("https://i.pinimg.com/1200x/49/c1/9c/49c19cf094a59f57b85feaae503497f0.jpg");
+}
+
