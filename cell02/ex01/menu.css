@@ -1,0 +1,36 @@
+.outside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label h1 {
+    text-align: center;
+}
+
+img {
+    margin-top: 2%;
+    max-width: 50%;
+    display: flex;
+}
+
+select {
+    border-radius: 20px;
+}
+
+body:has(#menu option[value="0"]:checked) #sandwich {
+    content: url("https://www.spicebangla.com/wp-content/uploads/2024/07/vegetable-sandwich-recipe.webp");
+}
+
+body:has(#menu option[value="1"]:checked) #sandwich {
+    content: url("https://www.ketovale.com/wp-content/uploads/2020/03/no-bread-chicken-sandwich.jpg");
+}
+
+body:has(#menu option[value="2"]:checked) #sandwich {
+    content: url("https://www.foodiecrush.com/wp-content/uploads/2023/08/Club-Sandwich-7-foodiecrush.com_.jpg");
+}
+
+body:has(#menu option[value="3"]:checked) #sandwich {
+    content: url("https://www.allrecipes.com/thmb/ICeU6n3kGzoTxOV4ONB0q_TpgYk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/125434-GrilledCheeseoftheGods-mfs-3x2-067-267097af4d0b446ab646bba044445147.jpg");
+}
