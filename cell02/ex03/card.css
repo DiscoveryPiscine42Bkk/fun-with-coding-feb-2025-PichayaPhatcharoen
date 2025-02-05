@@ -6,8 +6,7 @@ h1 {
     grid-row: 3;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px 5x black;
-    border: 1px solid black;
+    box-shadow: 2px 5px 10px black;
     margin-top: 2%;
     margin-left: 20%;
     margin-right: 20%;
@@ -21,10 +20,13 @@ h1 {
     text-align: center;
     
 }
-
+.fade{
+    opacity: 0.5;
+}
 a{
     margin-top: 5%;
     margin-bottom: 5%;
+    color: white;
 }
 
 .social{
@@ -40,6 +42,7 @@ button{
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
+    background-color: black;
 
 }
 #prof {
