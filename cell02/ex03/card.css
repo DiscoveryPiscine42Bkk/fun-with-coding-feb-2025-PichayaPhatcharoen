@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+.container {
+    grid-row: 3;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 5x black;
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.inside, .contact {
+    grid-column: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+a{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.social{
+    text-align: center;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.icon{
+    max-width: 10%;
+}
+button{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+#prof {
+    max-width: 40%;
+}
