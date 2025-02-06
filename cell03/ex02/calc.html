@@ -70,7 +70,7 @@
         if ((op === "4" || op === "5") && num_b === 0) {
             console.log("It's over 9000!");
             alert("It's over 9000!");
-        } else if (!Number.isInteger(num_a) || num_a <= 0 || !Number.isInteger(num_b) || num_b <= 0) {
+        } else if (!Number.isInteger(num_a) || num_a < 0 || !Number.isInteger(num_b) || num_b < 0) {
             console.log("Error");
             alert("Error");
         } else {
