@@ -31,9 +31,8 @@ function savecookies() {
         todos.push(node.innerText);
     }
     
-    console.log(document.cookie);
     document.cookie = "todos=" + JSON.stringify(todos) + "; expires=Thu, 07 Feb 2026 12:00:00 UTC; path=/";
-    console.log(todos)
+
 }
 
 function loadcookies() {
