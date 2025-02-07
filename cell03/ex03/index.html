@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./todo.js"></script>
+    <title>ex03</title>
+</head>
+<style>
+    .outer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    button {
+        margin: 20px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    p{
+        text-align: center;
+        margin:10px ;
+    }
+    .todo{
+        text-align: center;
+        margin: 1%;
+        width: 400px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    #ft_list{
+        width: 500px;
+        min-height: 500px;
+        height: fit-content;
+    }
+    #ft_list, .todo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+
+</style>
+<body>
+    <div class="outer">
+        <h1>TO DO LIST</h1>
+        <button onclick="insert()">New</button>
+        <div id="ft_list"></div>
+    </div>
+</body>
+</html>
